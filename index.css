@@ -9,7 +9,6 @@ header {
 
 .title {
     color: #131313;
-    text-align: center;
     font-size: 45px;
     font-style: normal;
     font-weight: 700;
@@ -119,14 +118,36 @@ main {
     font-weight: 700;
 
 }
-.features{
+
+/* features */
+
+/* facts */
+.facts-card {
     display: flex;
-    
-}
-.features-img{
-    width: 100%;
+    justify-content: space-around;
 }
 
+.facts-card .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.facts-card .card-stats {
+    color:#424242;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+.facts-card .card-title
+{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 2px;
+    
+}
 
 
 
@@ -141,11 +162,13 @@ main {
         padding: 20px;
     }
 
-    nav, 
-    .team-container
-     {
+    nav,
+    .team-container,
+    .facts-card
+    {
         flex-direction: column;
     }
+
     .img-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -153,10 +176,14 @@ main {
         padding-left: 5px;
         border-radius: 8px;
     }
-    .img-content {
+
+    .img-content , .facts-card{
         padding: 0px 20px;
     }
-    
+    .facts-card
+    {
+        gap: 20px;
+    }
 }
 
 /* medium device*/
@@ -166,9 +193,8 @@ main {
     }
 
     nav,
-    .team-container
-     {
+    .team-container {
         flex-direction: column;
     }
-    
+
 }
