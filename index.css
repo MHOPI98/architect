@@ -148,6 +148,22 @@ main {
     margin-top: 2px;
     
 }
+.sponsor 
+{
+    text-align: center;
+    margin-top: 100px;
+}
+.sponsor-img
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    gap: 20px;
+   align-items: center;
+}
+.sponsor-img img{
+    width: 165px;
+}
 
 
 
@@ -164,7 +180,8 @@ main {
 
     nav,
     .team-container,
-    .facts-card
+    .facts-card,
+    .sponsor-img
     {
         flex-direction: column;
     }
